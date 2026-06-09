@@ -38,8 +38,6 @@ html, body, [class*="css"] {
 hr {
     border-color: #333333;
 }
-</style>
-""", unsafe_allow_html=True)
 
 /* 전체 상단 여백 줄이기 */
 .block-container {
