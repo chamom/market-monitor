@@ -7,10 +7,32 @@ import yfinance as yf
 # Page Config
 # ==================================================
 
-st.set_page_config(layout="wide")
+st.set_page_config(
+    page_title="Market Monitor",
+    layout="wide",
+    initial_sidebar_state="collapsed"
+)
 
 st.markdown("""
 <style>
+
+/* 전체 배경 */
+.stApp {
+    background-color: #0E1117;
+    color: #FFFFFF;
+}
+
+/* metric 카드 */
+[data-testid="metric-container"] {
+    background-color: #1C1F26;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* 텍스트 */
+html, body, [class*="css"] {
+    color: #FFFFFF;
+}
 
 /* 전체 상단 여백 줄이기 */
 .block-container {
