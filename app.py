@@ -16,10 +16,20 @@ st.set_page_config(
 st.markdown("""
 <style>
 
-/* 전체 배경 */
+/* 전체 앱 배경 */
 .stApp {
     background-color: #0E1117;
     color: #FFFFFF;
+}
+
+/* 기본 텍스트 강제 흰색 */
+html, body, [class*="css"] {
+    color: #FFFFFF !important;
+}
+
+/* 제목 */
+h1, h2, h3, h4 {
+    color: #FFFFFF !important;
 }
 
 /* metric 카드 */
@@ -29,14 +39,24 @@ st.markdown("""
     padding: 10px;
 }
 
-/* 텍스트 */
-html, body, [class*="css"] {
-    color: #FFFFFF;
+/* metric 값 (숫자) */
+[data-testid="metric-value"] {
+    color: #FFFFFF !important;
+}
+
+/* metric 라벨 */
+[data-testid="metric-label"] {
+    color: #AAAAAA !important;
 }
 
 /* divider */
 hr {
-    border-color: #333333;
+    border-color: #333333 !important;
+}
+
+/* 사이드 요소 (있을 경우) */
+.stSidebar {
+    background-color: #111318;
 }
 
 /* 전체 상단 여백 줄이기 */
